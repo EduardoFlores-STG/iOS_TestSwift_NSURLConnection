@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="TestSwift_NSURLConnection" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGd-mQ-g2K">
+                                <rect key="frame" x="92" y="132" width="137" height="30"/>
+                                <state key="normal" title="Use NSURLSession">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_useNSURLSession:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8h5-lO-I0V"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Leo-eQ-mrQ">
+                                <rect key="frame" x="16" y="197" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="XR9-jv-1Nz">
+                                <rect key="frame" x="40" y="226" width="240" height="240"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="NOW IN SWIFT!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QgR-Q4-baI">
+                                <rect key="frame" x="16" y="474" width="288" height="74"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="33"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zJo-b4-Ibd">
+                                <rect key="frame" x="80" y="94" width="161" height="30"/>
+                                <state key="normal" title="Use NSURLConnection">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="button_useNSURLConnection:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r9N-BX-HZP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QgR-Q4-baI" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="6pi-hX-PaP"/>
+                            <constraint firstItem="QgR-Q4-baI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="Cki-Vv-Ii5"/>
+                            <constraint firstItem="Leo-eQ-mrQ" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="177" id="DjN-pW-djx"/>
+                            <constraint firstAttribute="centerX" secondItem="XR9-jv-1Nz" secondAttribute="centerX" id="Gk5-tW-WZN"/>
+                            <constraint firstAttribute="centerX" secondItem="zJo-b4-Ibd" secondAttribute="centerX" constant="-0.5" id="QSY-dF-irH"/>
+                            <constraint firstItem="XR9-jv-1Nz" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="206" id="R43-Ik-YWK"/>
+                            <constraint firstItem="AGd-mQ-g2K" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="112" id="Tp1-7F-OqM"/>
+                            <constraint firstAttribute="centerX" secondItem="QgR-Q4-baI" secondAttribute="centerX" id="Wcy-PZ-VmA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QgR-Q4-baI" secondAttribute="bottom" constant="20" id="XlS-2H-9jq"/>
+                            <constraint firstAttribute="centerX" secondItem="AGd-mQ-g2K" secondAttribute="centerX" constant="-0.5" id="bcH-7G-LOH"/>
+                            <constraint firstItem="Leo-eQ-mrQ" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="cjr-zw-n5r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="XR9-jv-1Nz" secondAttribute="trailing" constant="24" id="iJe-oO-UTI"/>
+                            <constraint firstItem="zJo-b4-Ibd" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="74" id="l6E-9H-0TP"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XR9-jv-1Nz" secondAttribute="bottom" constant="102" id="p1Y-0J-8lh"/>
+                            <constraint firstItem="Leo-eQ-mrQ" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="sDu-cl-XEE"/>
+                            <constraint firstAttribute="centerX" secondItem="Leo-eQ-mrQ" secondAttribute="centerX" id="sFR-he-mZS"/>
+                            <constraint firstItem="XR9-jv-1Nz" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="24" id="vqh-ZB-Ioe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="XR9-jv-1Nz" id="uoF-G6-FAq"/>
+                        <outlet property="label_status" destination="Leo-eQ-mrQ" id="d35-aD-dPe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="272" y="239"/>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
